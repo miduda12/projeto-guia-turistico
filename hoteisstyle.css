@@ -1,0 +1,206 @@
+body{
+   margin: 1;
+     padding: 1;
+   position: center;
+}
+
+.containerproje{
+   position: relative;
+}
+
+.containerproje .slide-container .slide{
+   min-height: 60vh;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 15px;
+   padding: 20px 9%;
+   padding-bottom: 40px;
+}
+
+.containerproje .slide-container .slide .contentproje{
+   flex: 50px;
+   animation: slideContent .40s linear .40s backwards;
+}
+
+@keyframes slideContent{0%
+{
+   opacity: 0;
+   transform: translateX(-50px, -50px);
+}
+}
+
+
+.containerproje .slide-container .slide .contentproje h3{
+   font-size: 35px;
+   color: #f4a6fe;
+   font-family: 'Noto Sans', sans-serif;
+}
+
+.containerproje .slide-container .slide .contentproje p{
+   font-size: 16px;
+   color: #050404;
+   font-family: 'Noto Sans', sans-serif;
+   width: 10%;
+   height: 10%;
+
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj{
+   margin-top: 10px;
+   display: inline-block;
+   background: #8932c3;
+   color: #070202;
+   font-size: 17px;
+   padding: 9px 40px;
+   border-radius: 5px;
+   border: 2px solid #8932c3;
+   font-family: 'Noto Sans', sans-serif;
+   text-decoration: none;
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj:hover{
+   background: #a355d7;
+   border: 2px solid #a355d7;
+   color: #050303;
+}
+
+.containerproje .slide-container{
+   display: none;
+}
+
+.containerproje .slide-container.active{
+   display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(2) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(3) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(4) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(5) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(6) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(7) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(8) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(9) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje .slide-container:nth-child(10) .slide{
+   background-size:cover;
+   background-repeat: no-repeat;
+   width: 60vw;
+   height: 60vh;
+}
+
+.containerproje #prev, 
+.containerproje #next {
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   color: #0c0808;
+   background: #890873;
+   height: 50px;
+   width: 50px;
+   line-height: 50px;
+   font-size: 25px;
+   text-align: center;
+   cursor: pointer;
+   font-weight: bolder;
+   border-radius: 50px;
+}
+
+.containerproje #prev:hover, 
+.containerproje #next:hover{
+   background: #ee7bd3;
+}
+.containerproje #prev{
+   left: 20px;
+}
+
+.containerproje #next{
+   right: 20px;
+}
+
+
+
+@media(max-width: 500px){
+   .containerproje #prev{
+       left: 0px;
+       top: 60%;
+   }
+
+   .containerproje #next{
+       right: 0px;
+       top: 60%;
+   }
+
+
+   .containerproje .slide-container .slide .contentproje p{
+       font-size: 16px;
+       color: #0e0c0c;
+       font-family: 'Noto Sans', sans-serif;
+       width: 70%;
+       height: 10%;
+   
+   }
+}
+:root{
+   --color-button: #890873;
+   border: none;
+   padding: 12px 30px;
+   border-radius: 10px;
+   font-size: 16px;
+   transition: 0.5s;
+}
+ 
